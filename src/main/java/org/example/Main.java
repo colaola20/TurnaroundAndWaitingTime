@@ -4,27 +4,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
+
+
+
+    public void FCFS_calculations(ArrayList<int[]> processes) {
+
+    }
+
     public static void main(String[] args) {
-        List<Integer> processes = new ArrayList<>();
-        List<Integer> burstTime = new ArrayList<>();
-        List<Integer> priorities = new ArrayList<>();
-        for (int i = 1; i < 6; i++) {
-            processes.add(i);
-        }
-        burstTime.add(2);
-        burstTime.add(1);
-        burstTime.add(8);
-        burstTime.add(4);
-        burstTime.add(5);
+        List<int[]> processes = new ArrayList<int[]>();
 
-        priorities.add(2);
-        priorities.add(1);
-        priorities.add(4);
-        priorities.add(2);
-        priorities.add(3);
-
-        System.out.println(processes);
-        System.out.println(burstTime);
-        System.out.println(priorities);
+        processes.add(new int[] {1, 2, 2});
+        processes.add(new int[] {2, 1, 1});
+        processes.add(new int[] {3, 8, 4});
+        processes.add(new int[] {4, 4, 2});
+        processes.add(new int[] {5, 5, 3});
     }
 }
